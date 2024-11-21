@@ -1,5 +1,6 @@
 body {
   display: flex;
+  flex-direction: column; /* Stack elements vertically */
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -8,14 +9,23 @@ body {
 }
 
 h1 {
-  font-family:  Comic Sans MS;
+  font-family: Comic Sans MS, Arial, sans-serif; /* Comic Sans with fallbacks */
   font-size: 5rem;
   margin: 0;
   color: white; /* White color for the text */
+  text-align: center;
 }
 
 .gradient-text {
   background: linear-gradient(to right, #29ff86, #91ffc1);
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.spaced {
+  margin-top: 4rem; /* Add space above */
+}
+
+.large-gap {
+  margin-top: 8rem; /* Larger gap for separation */
 }
